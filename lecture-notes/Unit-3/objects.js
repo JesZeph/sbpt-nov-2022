@@ -48,22 +48,41 @@ let theSimpsons = {
     },
     currently_running: true,
 }
+// -------------------------
+//! Destructuring
 
-// Dot Notation & Square Brackets
-console.log(theSimpsons.genre);
-console.log(theSimpsons['est']); //wrap in quotes
-console.log(theSimpsons.seasons["season one"]);//must use square brackets for multi-word keys.
+const { characters, seasons } = theSimpsons;
+console.log('Destructuring Characters', characters);
+console.log('Seasons', seasons);
+characters.push('Meo'); // Typo
+// console.log(characters);
+characters[6] = 'Moe';
+console.log(characters);
 
-theSimpsons.characters = ['Homer', 'Marge','Bart','Lisa','Maggie'];
-console.log(theSimpsons);
+const { est: established, currently_running: on_air} = theSimpsons;
+console.log(established);
+console.log(on-air);
 
-// How add another character to the characters.
+console.log("Doesn't Change Oroginal: ", Object.keys(theSimpsons));
 
-theSimpsons.characters.push('Ned');
-console.log(theSimpsons);
+// -------------------
+//! Spread with Objects
+const simpsonCharacters = {
+    simpsonsHouse: ['Homer','Marge','Bart','Lisa','Maggie'],
+    moesTavern: ['Moe','Barney']
+};
 
-// change the aired date of episode 2 in season 1 to Jan 14th 1990
-theSimpsons.seasons["season one"][1].aired = '1990-01-14';
-console.log(theSimpsons.seasons["season one"][1]);
-console.log(theSimpsons.seasons["season one"][2][1]);
+const generalLocations = {
+    park: 'statue',
+    beach: 'dock',
+    lake: '3-eyed fish'
+}
+
+const locations = {
+    ...simpsonCharacters,
+    dmv: ['Patty','Selma'],
+    ...generalLocations
+};
+
+console.log(locations);
 
