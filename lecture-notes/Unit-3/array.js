@@ -349,13 +349,11 @@ let refCopy = reference;
 //* Rest Syntax
 /* 
 ... Looks exactly like spread syntax
-...- Spread ►  "expands" an array
-    - Rest ▶︎ "condenses" an array
+...- Spread =>  "expands" an array
+    - Rest => "condenses" an array
 */
 
-const fullNameAgain = ['Jane', 'Doe', "Mrs.", { 
-    month: 03, date: 22, year: 1973
-}, 2, 'test','4',true, false ];
+const fullNameAgain = ['Jane', 'Doe', "Mrs.", { month: 03, date: 22, year: 1973}, 2, 'test','4',true, false ];
 
 let janesName = fullNameAgain[0];
 // const [ newFirst, newLast, ...moreInfo ] = fullNameAgain;
