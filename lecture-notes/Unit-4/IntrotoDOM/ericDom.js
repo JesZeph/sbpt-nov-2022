@@ -206,7 +206,7 @@ function addItem() {
 }
 
 // Building Items
-let buildBtn = document.getElementById('table-btn');
+let 'buildBtn.' = document.getElementById('table-btn');
 let shellDiv = document.getElementById('shell-div');
 
 const myLlet buildBtn = document.getElementById('table-btn');
