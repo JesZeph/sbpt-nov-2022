@@ -15,11 +15,13 @@
         
 */
 
-
-let first = 'Ben';
-let last = "Rivera";
-let birth = 1999;
-let coffee = true;
+let firstName = 'Jessa';
+let lastName = 'Jakima';
+let birthYear = 1917;
+let needCoffee = true;
 let currentYear = 2022;
-let age = currentYear - birth;
-console.log(age);
+let currentAge = currentYear - birthYear;
+console.log(currentAge);
+
+
+
