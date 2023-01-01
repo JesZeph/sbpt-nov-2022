@@ -1,4 +1,4 @@
-/* 
+/* NOV30'22
 !   Conditionals
     - Evaluates an expression and responds if it is true
     - Falsy
@@ -15,15 +15,20 @@ let isOn = true;
 if(isOn == true) {
     console.log('The light is on!');
 }
-/* 
-    Structure:
 
+/*
+   [""if""  is the Keyword; 
+    ""(isOn == true)"" is the Expression -[LXprsnAsksQstn]; 
+    If answr to ? is yes, then console.log runs;]
+
+    STRUCTURE:
     if(expression evaluated) {
         ... code that runs if expression is true.
     }
-
 */
 
+
+// [NOW, HERE, WRITTEN IT BRIEFLY]
 if(isOn) {
     console.log('The light is on, yay!');
 }
@@ -68,12 +73,17 @@ if(weather > 70 || rain) {
     console.log('no jacket');
 }
 
+let rain = false;
+
 console.log(rain);
 console.log(!rain);
 if(!rain) {
     console.log('Seems to be a clear day');
-}
+} 
 
+
+//  ELSE / IF
+ 
 let grade = 88;
 grade = 76;
 // grade = 0;
@@ -85,6 +95,11 @@ if(grade > 75) {
 } else {
     console.log('Failing');
 }
+// [ORDER MATTERS IN ELSE / IF.
+
+
+// *****************
+
 
 //! Switch
 /* 

@@ -7,7 +7,17 @@
     If the age is at least 21, console.log 'You can drink!'
     If the age is at least 25, console.log 'You can rent a car!'
 */
+let age = 30;
 
+if(age < 17){
+    console.log('Sorry, you\'re too young to do anything.');
+} else if(age <= 18) {
+    console.log('You can vote!');
+} else if(age <= 21) {
+    console.log('You can drink!');
+} else {
+    console.log('You can rent a car!');
+}
 
 
 /*
