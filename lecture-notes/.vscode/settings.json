@@ -1,4 +1,5 @@
 {
     "markdown.updateLinksOnFileMove.enabled": "always",
-    "editor.linkedEditing": true
+    "editor.linkedEditing": true,
+    "editor.comments.ignoreEmptyLines": false
 }
