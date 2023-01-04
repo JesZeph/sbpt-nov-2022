@@ -5,19 +5,20 @@
 
     Two Main Types:
         - Declaration
-        - Expresion
+        - Expression
 */
 
-//* Declaration
+//* Declaration   //LOADS BEFORE ANY CODE IS EXECUTED  (later hoisting)
+                 // NEW KEYWORD: function
 /* 
     Structure:
-       1      2
+    1      2
     function hi() {
         ... code block
     }
 
     1. Keyword
-    2. Name of the function and parenthesis for the parameter
+    2. Name of the function [hi] and parenthesis for the parameter
 
     ! Gets hoisted
 */
@@ -26,10 +27,10 @@ function hi() {
 }
 
 
-//* Expression
+//* Expression   //FUNCTION EXPRESSIONS ARE ESSENTIALLY FUNCTIONS THAT ARE  STORED INSIDE OF A VARIABLE
 /* 
     Structure:
-       1
+        1
     let hey = function hi() {
         code block...
     }
@@ -37,15 +38,19 @@ function hi() {
     1. The variable "hey" is now representative of the function hi()
     ! Does NOT get hoisted
 */
+function hi() {
+    console.log('hi');
+}
 
 let hello = function hey() {
-    console.log('hey');
-    return "hey";
+    // console.log('hey');
+ return 'hey';
+   
 }
 
 hi();  // invoking our function hi()
 hello(); // Expression variable name is required to run function
-// hey(); // doesn't run
+//hey(); // doesn't run
 
 console.log (hello);
 console.log (hello());

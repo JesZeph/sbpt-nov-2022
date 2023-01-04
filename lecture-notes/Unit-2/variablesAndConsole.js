@@ -1,3 +1,4 @@
+// <!-- Nov 28 Class: Variables; Console; Data Types; Operators-->
 /* 
     var
     let

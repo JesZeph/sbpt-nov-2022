@@ -1,9 +1,15 @@
-// Booleans: true or false
+
+// <!-- Nov 28 Class: Variables; Console; Data Types; Operators-->// Booleans: true or false
+
 let on = true;
 console.log(on);
-
+// let on = true;
+// console.log(on);
 let off = false;
 console.log(off);
+
+// let off = false;
+// console.log(off);
 
 // Null
 let empty = null;
@@ -59,7 +65,7 @@ console.log(typeof second);
 let createNumber = Number('123');
 let notANumber = Number('abc');
 console.log(notANumber);
-console.log(createNumber);
+console.l  og(createNumber);
 console.log(typeof createNumber);
 
 let sum = '1' + 3;
