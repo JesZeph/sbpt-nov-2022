@@ -31,7 +31,7 @@ if(isOn == true) {
 }
 
 
-let isOn = true; 
+// let isOn = true; 
 
 if(isOn) {
     console.log('The light is on, yay!');

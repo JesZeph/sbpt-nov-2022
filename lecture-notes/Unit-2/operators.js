@@ -1,4 +1,4 @@
-
+//NOV 30 CLASS
 
 // -Operators
 //         - Plus          +
@@ -143,6 +143,7 @@ console.log('Greater Than: ', y);
 
 // ***  AND  ***
 2 && 2;
+2 < 10 && 2 > 1
 console.log('And', 2 && 3);
 
 // [TRUE STATEMENT ON BOTH SIDES TO COME BACK TRUE;
